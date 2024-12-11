@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanity Studio</title>
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif; /* Set font to Georgia, serif */
+            color: #fff;
+            overflow-x: hidden;
+            background-color: #000; /* Set entire background to black */
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(135deg, #000, #000); /* Black background for hero section */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            text-align: center;
+        }
+
+        /* Navbar */
+        .navbar {
+            width: 100%;
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 0;
+        }
+
+        /* Logo Container */
+        .logo {
+            background-color: black;
+            padding: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        .logo img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem; /* Increased font size */
+            font-weight: bold; /* Bold text */
+        }
+
+        .nav-links a:hover {
+            color: #f9a826;
+            transition: color 0.3s ease;
+        }
+
+        /* Hero Content */
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .main-title {
+            font-size: 2.5rem; /* Smaller font size for "Welcome to" */
+            line-height: 1.2;
+            color: #fff;
+            font-weight: bold; /* Bold text */
+        }
+
+        .highlight {
+            font-size: 4rem; /* Increased font size */
+            font-weight: bold; /* Bold text */
+            text-transform: uppercase;
+            color: #f9a826;
+            margin-top: 0.5rem;
+            display: block;
+        }
+
+        .sub-title {
+            font-size: 1.5rem; /* Third line font size */
+            margin-top: 1rem;
+            color: #f0f0f0;
+            font-weight: bold; /* Bold text */
+        }
+
+        .btn-get-started {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background-color: #f9a826;
+            color: #141e30;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 10px 20px rgba(249, 168, 38, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-get-started:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(249, 168, 38, 0.5);
+        }
+
+        /* Pop Effect */
+        .btn-get-started:active {
+            animation: bubble-pop 0.3s ease;
+        }
+
+        @keyframes bubble-pop {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Glowing Circle Animation */
+        .glowing-circle {
+            position: absolute;
+            bottom: -150px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, #f9a826 0%, transparent 70%);
+            border-radius: 50%;
+            animation: pulse 5s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.9);
+                opacity: 0.7;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(0.9);
+                opacity: 0.7;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="file:///C:/Users/wahab/OneDrive/Desktop/sanity%20studio/logo.jpg" alt="Sanity Studio Logo">
+            </div>
+
+            <ul class="nav-links">
+               <li><a href="file:///C:/Users/wahab/OneDrive/Desktop/sanity%20studio/home.html">Home</a></li>
+
+                <li><a href="file:///C:/Users/wahab/OneDrive/Desktop/sanity%20studio/about.html">About</a></li> <!-- About Section Link -->
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Hero Content -->
+        <div class="hero-content">
+            <h1 class="main-title">Welcome to</h1>
+            <span class="highlight">SANITY STUDIO</span>
+            <p class="sub-title">Your Personal Mental Health Support Companion</p>
+            <!-- 'Get Started' Button -->
+            <a href="file:///C:/Users/wahab/OneDrive/Desktop/sanity%20studio/get%20started.html" class="btn-get-started">Get Started</a>
+        </div>
+
+        <!-- Glowing Circle for Visual Effect -->
+        <div class="glowing-circle"></div>
+    </div>
+
+</body>
+</html>
